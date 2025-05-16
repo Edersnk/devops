@@ -1,4 +1,18 @@
-apiVersion: 
-king:
+apiVersion: apps/v1
+kind: Deployment
 metadata:
+  name: web
 spec:
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:    
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: fabricioveronez/web-color:blue
+            ports:
+            - container: 80    
