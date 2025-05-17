@@ -62,10 +62,10 @@ spec:
         ports:
         - containerPort: 80
         env:
-        - name: ASPNETCORE_HTTP_PORTS
-          value: "8080"
-        - name: ConnectionStrings_DefaultConnection
-          value: "Host=postgre;Database=review;Username=review;Password=review"
+          - name: ASPNETCORE_HTTP_PORTS
+            value: "8080"
+          - name: ConnectionStrings__DefaultConnection
+            value: "Host=postgre;Database=review;Username=review;Password=review"
 ---
 
 # Deployment Service review de filmes
