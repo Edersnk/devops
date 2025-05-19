@@ -11,7 +11,7 @@ jobs:
       - name: Obter codigo do Projeto
         uses: actions/checkout@v4
 
-      - name: Executar testes setupo .net
+      - name: Setando versão do Dotnet
         uses: xt0rted/setup-dotnet@v1.0.0  
         with:
           dotnet-version: 8.x
