@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgre
-spec:
+spec: 
   selector:
     matchLabels:
       app: postgre
@@ -47,7 +47,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: review
-spec:
+spec: 
   selector:
     matchLabels:
       app: review
