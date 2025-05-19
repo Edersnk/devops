@@ -18,3 +18,4 @@ jobs:
       - run: echo "Obter codigo"
       - run: echo "Configurar kubeconfig"
       - run: echo "Executar o apply"
+      - run: echo "Executar o apply"
