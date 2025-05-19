@@ -12,7 +12,7 @@ jobs:
       - run: echo "Executar codogo"
       - run: echo "Build da imagem docker"
       - run: echo "Push da imagem docker"
-  cd: needs ["ci"]      
+  cd:   
     runs-on: ubuntu-latest
     steps:
       - run: echo "Obter codigo"
