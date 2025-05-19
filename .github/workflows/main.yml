@@ -57,3 +57,4 @@ jobs:
           manifests: |
             ./02-review/k8s/deployment.yaml
           images: 'edersnk/review-jornada:v${{ github.run_number }}'
+# 22222222222
