@@ -1,0 +1,20 @@
+name: ci-cd
+on:
+  push:
+    branches:["main"]
+  workflow_dispatch:
+  
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Obter codigo"
+      - run: echo "Executar codogo"
+      - run: echo "Build da imagem docker"
+      - run: echo "Push da imagem docker"
+  cd: needs ["ci"]      
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Obter codigo"
+      - run: echo "Configurar kubeconfig"
+      - run: echo "Executar o apply"
